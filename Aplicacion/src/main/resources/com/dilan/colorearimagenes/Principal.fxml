@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="585.0" prefWidth="1300.0" style="-fx-background-color: #444343;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dilan.controller.PrincipalController">
+   <center>
+      <GridPane hgap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="593.0" prefWidth="980.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="610.3333740234375" minHeight="10.0" prefHeight="517.3333129882812" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="177.0" minHeight="10.0" prefHeight="67.66668701171875" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="imgViewSubida" fitHeight="405.0" fitWidth="546.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="botonSubirImg" mnemonicParsing="false" onMouseClicked="#subirImagen" prefHeight="34.0" prefWidth="116.0" style="-fx-text-fill: white; -fx-background-color: de2732; -fx-background-radius: 7;" text="Subir imagen" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin></Button>
+            <ImageView fx:id="imgViewResultado" fitHeight="405.0" fitWidth="546.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <Button fx:id="botonSubirImg1" mnemonicParsing="false" onMouseClicked="#guardarImagen" prefHeight="34.0" prefWidth="134.0" style="-fx-text-fill: white; -fx-background-color: de2732; -fx-background-radius: 7;" text="Guardar imagen" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin></Button>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <Label prefHeight="25.0" prefWidth="904.0" style="-fx-text-fill: white;" text="Imagen sin color                                                                                      Imagen con color" BorderPane.alignment="CENTER_LEFT">
+         <BorderPane.margin>
+            <Insets left="190.0" top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
